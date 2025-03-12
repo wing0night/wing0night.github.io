@@ -40,3 +40,7 @@ defaults:
       type: post
     values:
       tags: Other
+
+# 评论系统
+# Disqus（https://disqus.com/）
+disqus_username: charinwing
