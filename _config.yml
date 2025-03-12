@@ -18,7 +18,7 @@ instagram_username: "wing0night"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-# theme: "minima"
+theme: "minima"
 
 rss: rss
 
@@ -40,7 +40,3 @@ defaults:
       type: post
     values:
       tags: Other
-
-# 评论系统
-# Disqus（https://disqus.com/）
-disqus_username: charinwing
