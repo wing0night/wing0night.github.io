@@ -9,5 +9,12 @@ This tutorial shows how to deploy a CAN communication project on RK3566(ubuntu) 
 
 
 
-
+<script src="https://utteranc.es/client.js"
+        repo="wing0night/wing0night.github.io"
+        issue-term="pathname"
+        label="comments"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
