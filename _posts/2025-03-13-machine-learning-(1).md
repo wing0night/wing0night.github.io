@@ -31,15 +31,18 @@ $$
 将参数$\mu$, $\sigma^2$设为$\theta$，即$\theta = (\mu, \sigma^2)$
 
 - MLE推导
+
 $$
 MLE = \theta_{MLE} = argmax_{\theta}(P(X | \theta))
 $$
+
 $P(X | \theta)$：概率乘积$\prod$。
 
 对$P(X | \theta)$取log（ln）
 $$
 logP(X|\theta) = log\prod_{i=1}^{N}P(x_i|\theta) = \sum_{i=1}^Nlog[P(x_i|\theta)]=\sum_{i=1}^Nlog[\frac{1}{\sqrt{2\pi}\sigma}exp(-\frac{(x_i-\mu)^2}{2\sigma^2})]
 $$
+
 通过对此式分别求导，求得$argmax_\mu$和$argmax_{\sigma^2}$
 
 $$
