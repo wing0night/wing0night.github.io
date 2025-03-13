@@ -35,7 +35,6 @@ $$
 $$
 MLE = \theta_{MLE} = argmax_{\theta}(P(X | \theta))
 $$
-
 $P(X | \theta)$：概率乘积$\prod$。
 
 对$P(X | \theta)$取log（ln）
