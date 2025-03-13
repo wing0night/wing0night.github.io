@@ -1,4 +1,4 @@
-## 尝试写点东西
+## Try to write something
 
 时常感觉到进入大学以来自己的写作欲望在被压抑。其实不全怪时间，很多时候我有时间去写作，只是写作不再成为一种生活习惯，不再像高中那样stand the position to be almost the only way I can relax myself。
 
