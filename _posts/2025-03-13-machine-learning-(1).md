@@ -122,7 +122,7 @@ $$
 
 Data可以被表示为$y = f(w) + \epsilon = w^Tx + \epsilon$。于是Data服从$N(w^Tx, \sigma^2)$
 
-MLE$\rightarrow$ $\hat{w} =argmax_wlogP(Y|X; w) = argmin_w(y_i - w^Tx_i)^2$
+MLE$\rightarrow$ $\hat{w} =argmax_wlogP(Y\|X; w) = argmin_w(y_i - w^Tx_i)^2$
 
 $\star$ 最小二乘估计等价于noise为高斯噪声时的极大似然估计（MLE）
 
