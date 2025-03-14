@@ -55,7 +55,7 @@ $$
 
 #### 计算参数w
 
-![alt text](images/image.png)
+![alt text](https://raw.githubusercontent.com/wing0night/wing0night.github.io/refs/heads/main/_posts/images/image.png)
 <center>matplotlib绘制的最小二乘法示意图</center>
 
 $$
