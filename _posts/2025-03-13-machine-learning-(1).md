@@ -2,7 +2,7 @@
 
 记录一些小破站机器学习课程笔记
 
-【【机器学习】【白板推导系列】【合集 1～33】】 https://www.bilibili.com/video/BV1aE411o7qd/?share_source=copy_web&vd_source=177d9d66af4f939bd66d809cf884ebbf
+**[【【机器学习】【白板推导系列】【合集 1～33】】]( https://www.bilibili.com/video/BV1aE411o7qd/?share_source=copy_web&vd_source=177d9d66af4f939bd66d809cf884ebbf)**
 
 高斯分布-最小二乘法-正则化
 
@@ -53,13 +53,133 @@ $$
 
 ### 最小二乘法
 
+#### 计算参数w
 
+![alt text](images/image.png)
+<center>matplotlib绘制的最小二乘法示意图</center>
 
+$$
+Data = {(x_1, y_1), ..., (x_n, y_n)}, x_i\in R^P, y_i\in R^1
+$$
 
+$x_i$和$y_i$分别属于P维空间和1维空间
+
+$$
+X = \begin{pmatrix}x_{11}&x_{12}&...&x_{1p} \\ x_{21}&x_{22}&...&x_{2p} \\ x_{N1}&x_{N2}&...&x_{Np} \end{pmatrix}_{N*P}
+$$
+
+$$
+Y = \begin{pmatrix}y_1 \\ y_2 \\ ... \\y_N \end{pmatrix}_{N*1}
+$$
+
+损失函数
+
+$$
+L(w) = \sum^N_{i=1}||w^Tx_i - y_i||^2 = (w^TX^T - Y^T)(XW - Y) = w^TX^TXw - 2w^TX^TY + Y^TY
+$$
+
+$$
+\hat{w} = argmin_wL(w)
+$$
+
+-> 求导 ->
+
+$$
+\frac{\delta L(w)}{\delta w} = 0 -> 2X^TXw - 2X^TY = 0 -> \hat{w} = (X^TX)^{-1}X^TY（(X^TX)^{-1}X^T：伪逆X^+）
+$$
+
+求得$\hat{w}$
+
+#### 几何理解
+
+对于$f(x) = w^Tx = x^T\beta$（左乘：行变换。右乘：列变换。转置之后原先的行变换即变成列变换）
+
+对于每一个$X_i \in R^p$，只要使得拟合的$y_i$离样本$y_i$的距离最小 $\rightarrow$ 向量相乘 $\bot$ 原先的样本$X_i$
+
+$$
+\overrightarrow{x_i} \bot (\overrightarrow{y_i} - \overrightarrow{x_i}\beta)
+$$
+
+$$
+\rightarrow \overrightarrow{X}(\overrightarrow{Y} - \overrightarrow{X}\overrightarrow{\beta}) = 0
+$$
+
+$$
+代入\overrightarrow{a} · \overrightarrow{b} = a^Tb
+$$
+
+$$
+X^T(Y-X\beta) = 0 \rightarrow \beta = (X^TX)^{-1}X^TY
+$$
+
+得到拟合后函数的参数
+
+#### 概率理解
+
+概率角度理解最小二乘估计
+
+如果数据含有噪声$\epsilon$，$\epsilon \in N(0, \sigma^2)$
+
+Data可以被表示为$y = f(w) + \epsilon = w^Tx + \epsilon$。于是Data服从$N(w^Tx, \sigma^2)$
+
+MLE$\rightarrow$$\hat{w} =argmax_wlogP(Y|X; w) = argmin_w(y_i - w^Tx_i)^2$
+
+$\star$ 最小二乘估计等价于noise为高斯噪声时的极大似然估计（MLE）
 
 ### 正则化-岭回归
 
+线性回归正则化的一个经典方法：岭回归
 
+$$
+Loss \quad Function: L(w) = \sum_{i=1}^N||w^Tx_i - y_i||^2\rightarrow\hat{w} = (X^TX)^{-1}X^TY
+$$
+
+$$
+X_{N*p}：N个样品，X\in R^p
+$$
+
+当$N >> p$时，$X^TX$可逆
+
+当p很大，或者样品数很少时，$X^TX$不可逆，容易过拟合
+
+$$
+过拟合\rightarrow\begin{cases}加数据 \\ 特征提取（减小p） \\ 正则化 \\ \end{cases}
+$$
+
+正则化框架
+
+$$
+argmin_w{(L(w) + \lambda P(w))}。
+$$
+
+$$
+L(w)： Loss function
+$$
+
+$$
+P(w)：惩罚项
+$$
+
+岭回归正则化方法
+
+$$
+J(w) = \sum_{i=1}^N||w^Tx_i-y_i||^2 + \lambda w^Tw
+$$
+
+$$
+\hat{w} = argmin_wJ(w)
+$$
+
+$$
+\rightarrow \hat{w} = (X^TX + \lambda I)^{-1}X^TY
+$$
+
+
+## Ref
+
+**[【【机器学习】【白板推导系列】【合集 1～33】】]( https://www.bilibili.com/video/BV1aE411o7qd/?share_source=copy_web&vd_source=177d9d66af4f939bd66d809cf884ebbf)**
+
+**[比较全的markdown数学符号集合](https://www.cnblogs.com/ywsun/p/14271547.html)**
 
 <script src="https://utteranc.es/client.js"
         repo="wing0night/wing0night.github.io"
