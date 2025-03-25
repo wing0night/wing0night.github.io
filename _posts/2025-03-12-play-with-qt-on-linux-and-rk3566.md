@@ -4,7 +4,24 @@ Qt is a multi-platform framework, which means that it can be easily deployed on 
 
 It gives us a convenience way to deploy a project on terminal device while we develop the project on upper computer.
 
-This tutorial shows how to deploy a CAN communication project on RK3566(ubuntu) while the developing process is on vmware(ubuntu). We will introduce the code while the source code is also open-sourced on github.
+This tutorial shows how to deploy a CAN communication project on RK3566(ubuntu) while the developing process is on vmware(ubuntu). We will introduce the code which is also open-sourced on [github](https://github.com/wing0night/liquid_handler).
+
+## Set up Qt on vmware
+
+- create Qt account, log in
+
+- Download Qt online installer here: https://www.qt.io/download-open-source
+
+![alt text](image.png)
+
+- Open Qt online installer in ubuntu
+
+!!! note "hint"
+    - If you want some older version of Qt, click "" button in online installer to fetch the former versions
+
+- Set up mixed compiler
+
+
 
 
 
