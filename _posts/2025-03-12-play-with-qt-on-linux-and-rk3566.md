@@ -23,8 +23,40 @@ This tutorial shows how to deploy a CAN communication project on RK3566(ubuntu) 
 
 
 
+## Quick start with my system
+
+If you have no need to customize your own linux devices, mostly SPI, I2C, these sort of communication interfaces, you can directly use the image that I have compiled, load it into your RK3566 board, and deploy the Tecan & stepper motor control system. This image is set up with pwm output, and default GPIO pins can be directly used.
+
+### Steps to set up the system
+
+1. load the image
+
+- find the xxx.iso file
+- Open RKDevTool downloaded before
+- Click "Switch" to change the board mode to "LOADER" mode
+- Click "Firmware", choose the location you download the xxx.iso file
+- Click "Update"
+
+And then you have a brand-new board with pwm pins set.
+
+2. In VMware, set up the mixed-compile compiler
+
+> you can also choose to use the built executable file if you have no need to modify the code
+
+- Qt program is under the directory ""
+
+- build
+
+3. Now you have a built Qt execute file(with no suffix file type specified)
+
+- Transfer the execute file to the board, maybe with a USB flash disk
+- Operate on the board Linux UI, transfer the USB-CAN lib to the /etc/QT5.15.../lib
+- Now run the file, by running `sudo LD_LIBRARY_PATH=/opt/qt-everywhere-src-5.15.8/ext/lib ./rk_ui2 -platform xcb` in the terminal. If that doesn't work, try to run `chmod +x ./rk_ui2` first.
+
+4. How to use the program
 
 
+The resources mentioned above are all available and well-labeled in the link below
 
 <script src="https://utteranc.es/client.js"
         repo="wing0night/wing0night.github.io"
