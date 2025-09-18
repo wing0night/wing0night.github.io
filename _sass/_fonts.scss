@@ -1,0 +1,17 @@
+/* Custom Fonts */
+@font-face {
+    font-family: 'CustomChinese';
+    src: url('../fonts/font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font fallbacks for better performance */
+@font-face {
+    font-family: 'CustomChinese';
+    src: url('../fonts/font.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
