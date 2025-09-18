@@ -72,7 +72,7 @@ console.log(a, b); // 2, 1
 ```javascript
 const user = {
     name: 'Wing',
-    email: 'wing@example.com',
+    email: 'wcy0590@gmail.com',
     age: 25,
     country: 'China'
 };
