@@ -1,0 +1,61 @@
+---
+layout: default
+---
+
+<article class="post page-content">
+    <header class="post-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+        <div class="post-meta">
+            <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">
+                {{ page.date | date: "%B %d, %Y" }}
+            </time>
+            {% if page.author %}
+            <span class="post-author">by {{ page.author }}</span>
+            {% endif %}
+            {% if page.tags.size > 0 %}
+            <div class="post-tags">
+                {% for tag in page.tags %}
+                <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    {% if page.tags.size > 0 %}
+    <footer class="post-footer">
+        <div class="post-tags">
+            <span>Tagged with:</span>
+            {% for tag in page.tags %}
+            <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
+            {% endfor %}
+        </div>
+    </footer>
+    {% endif %}
+</article>
+
+{% if site.disqus_shortname %}
+<section class="comments">
+    <div class="page-content">
+        <div id="disqus_thread"></div>
+        <script>
+            var disqus_config = function () {
+                this.page.url = "{{ page.url | absolute_url }}";
+                this.page.identifier = "{{ page.url | relative_url }}";
+            };
+            (function () {
+                var d = document, s = d.createElement('script');
+                s.src = 'https://{{ site.disqus_shortname }}.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+                Disqus.</a></noscript>
+    </div>
+</section>
+{% endif %}

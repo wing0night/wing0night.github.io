@@ -1,0 +1,185 @@
+/* Base styles - Medium.com inspired typography and layout */
+
+html {
+    font-size: 20px;
+
+    @media (max-width: $mobile) {
+        font-size: 18px;
+    }
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $text-color;
+    background-color: $background-color;
+    font-weight: 400;
+    letter-spacing: -0.003em;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-serif;
+    font-weight: 700;
+    line-height: $line-height-heading;
+    margin-bottom: $spacing-unit;
+    color: $accent-color;
+    letter-spacing: -0.04em;
+}
+
+h1 {
+    font-size: $font-size-xxl;
+    margin-bottom: $spacing-small;
+
+    @media (max-width: $mobile) {
+        font-size: 28px;
+    }
+}
+
+h2 {
+    font-size: $font-size-xl;
+    margin-top: $spacing-large;
+
+    @media (max-width: $mobile) {
+        font-size: 24px;
+    }
+}
+
+h3 {
+    font-size: $font-size-large;
+    margin-top: $spacing-unit;
+}
+
+h4,
+h5,
+h6 {
+    font-size: $font-size-base;
+    margin-top: $spacing-unit;
+}
+
+p {
+    margin-bottom: $spacing-unit;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Links */
+a {
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.2s ease;
+
+    &:hover {
+        color: darken($link-color, 10%);
+    }
+
+    &:visited {
+        color: $visited-link-color;
+    }
+}
+
+/* Lists */
+ul,
+ol {
+    margin-bottom: $spacing-unit;
+    padding-left: $spacing-unit;
+}
+
+ul {
+    list-style: disc;
+}
+
+ol {
+    list-style: decimal;
+}
+
+li {
+    margin-bottom: $spacing-small / 2;
+    line-height: $line-height-base;
+}
+
+/* Blockquotes */
+blockquote {
+    margin: $spacing-unit 0;
+    padding: 0 $spacing-unit;
+    border-left: 3px solid $border-color;
+    font-style: italic;
+    color: $secondary-text-color;
+
+    p {
+        margin-bottom: $spacing-small;
+    }
+}
+
+/* Code */
+code {
+    font-family: $font-family-mono;
+    font-size: 16px;
+    background-color: #f6f8fa;
+    padding: 2px 6px;
+    border-radius: 3px;
+    color: #24292e;
+}
+
+pre {
+    font-family: $font-family-mono;
+    font-size: 14px;
+    line-height: 1.45;
+    background-color: #f6f8fa;
+    padding: $spacing-unit;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin-bottom: $spacing-unit;
+
+    code {
+        background-color: transparent;
+        padding: 0;
+        font-size: inherit;
+    }
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin: $spacing-unit 0;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin-bottom: $spacing-unit;
+    border-collapse: collapse;
+
+    th,
+    td {
+        padding: $spacing-small;
+        text-align: left;
+        border-bottom: 1px solid $border-color;
+    }
+
+    th {
+        font-weight: 600;
+        background-color: $hover-color;
+    }
+}
+
+/* Horizontal rule */
+hr {
+    border: none;
+    height: 1px;
+    background-color: $border-color;
+    margin: $spacing-large 0;
+}
