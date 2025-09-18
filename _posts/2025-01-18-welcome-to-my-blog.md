@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Welcome to My Blog"
-date: 2025-01-18 10:00:00 +0800
+date: 2025-09-18 10:00:00 +0800
 categories: [blogging, introduction]
 tags: [welcome, first-post, blogging]
-author: Wing
-excerpt: "Welcome to my new blog! This is my first post where I introduce myself and share what you can expect from this space."
+author: Charin
+excerpt: "Welcome to my new blog! This is my first post where I introduce myself and share what you can expect from this space.测试"
 ---
 
 Hello and welcome to my blog! 🎉
