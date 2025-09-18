@@ -24,7 +24,7 @@ This blog is my digital garden where I'll be sharing:
 
 ## My Background
 
-I'm a passionate developer who loves to explore new technologies and share knowledge with the community. Whether you're a beginner just starting out or an experienced developer, I hope you'll find something valuable here.
+I'm a passionate developer who loves to explore new technologies and share knowledge with the community. Whether you're a beginner just starting out or an experienced developer, I hope you'll find something valuable here.测试
 
 ## What Makes This Blog Special
 
