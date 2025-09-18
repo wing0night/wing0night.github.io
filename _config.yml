@@ -4,8 +4,8 @@ email: your-email@example.com
 description: > # this means to ignore newlines until "baseurl:"
   A clean, minimalist blog inspired by Medium.com design.
   Writing about technology, thoughts, and life.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # GitHub Pages will set this automatically
+baseurl: "/wing" # the subpath of your site, e.g. /blog
+url: "https://wing0night.github.io" # GitHub Pages will set this automatically
 
 # Author settings
 author: Wing
