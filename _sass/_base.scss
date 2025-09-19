@@ -2,6 +2,8 @@
 
 html {
     font-size: 20px;
+    zoom: 0.67;
+    /* Set page zoom to 67% for optimal reading experience */
 
     @media (max-width: $mobile) {
         font-size: 18px;
