@@ -12,6 +12,8 @@ Hello and welcome to my blog! 🎉
 
 This is my very first post on this new platform, and I'm excited to share this journey with you. Let me tell you a bit about what you can expect from this space.
 
+Sometimes I write in English, but since Chinese is always my mother language and I started to learn English systematically at middle school, forgive my mistakes.
+
 ## What This Blog Is About
 
 This blog is my digital garden where I'll be sharing:
