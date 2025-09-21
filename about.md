@@ -35,16 +35,16 @@ permalink: /about/
         <p>You can find me on:</p>
         <ul>
             {% if site.social.github %}
-            <li><a href="https://github.com/wing0night/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener">GitHub</a></li>
             {% endif %}
             {% if site.social.twitter %}
-            <li><a href="https://x.com/wing0night/{{ site.social.twitter }}" target="_blank" rel="noopener">Twitter</a></li>
+            <li><a href="https://twitter.com/{{ site.social.twitter }}" target="_blank" rel="noopener">Twitter</a></li>
             {% endif %}
             {% if site.social.linkedin %}
-            <li><a href="https://www.linkedin.com/in/charin-wing-27590431a/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="noopener">LinkedIn</a></li>
             {% endif %}
             {% if site.email %}
-            <li><a href="wcy0590@gmail.com:{{ site.email }}">Email</a></li>
+            <li><a href="mailto:{{ site.email }}">Email</a></li>
             {% endif %}
         </ul>
     </div>

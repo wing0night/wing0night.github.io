@@ -1,6 +1,6 @@
 # Site settings
 title: Wing's Blog
-email: your-email@example.com
+email: wcy0590@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   A clean, minimalist blog inspired by Medium.com design.
   Writing about technology, thoughts, and life.
@@ -50,9 +50,9 @@ defaults:
 
 # Social links
 social:
-  github: your-github-username
-  twitter: your-twitter-username
-  linkedin: your-linkedin-username
+  github: wing0night
+  twitter: wing0night
+  linkedin: charin-wing-27590431a
 
 # Comments (using Disqus)
 disqus_shortname: # your-disqus-shortname
