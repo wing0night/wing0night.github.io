@@ -74,6 +74,8 @@ navigation:
     url: /
   - title: About
     url: /about/
+  - title: CV
+    url: /cv/
   - title: Archive
     url: /archive/
   - title: Tags

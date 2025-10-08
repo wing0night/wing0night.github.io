@@ -32,7 +32,7 @@ Starts as a tech and handcraft lover, I had my first building experience at a ve
 
 While during the first year of my college, I started to get involved in electric and embedded system development. And build some open-source project on platforms like github and jialichuang. 
 
-The third year in college is when I'm exposed to artificial intelligence and get very interested to it, it's why I chose to concentrate on robotics and join SII to do further research. I'm now a researcher in embodied intelligence and doing research on VLA(Visual Language Action model), feel free to contact me!
+The third year in college is when I'm exposed to artificial intelligence and get very interested to it, it's why I chose to concentrate on robotics and join SII to do further research. I'm now a researcher in embodied intelligence and doing research on VLA(Vision Language Action model), feel free to contact me!
 
 <!-- ### Code Highlighting
 ```javascript
